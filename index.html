@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,9 +14,9 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <header class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <header class="navbar navbar-expand-lg bg-body-tertiary">
       <nav class="container ">
-        <a class="navbar-brand fw-bold" href="#">X3School</a>
+        <a class="navbar-brand fw-bold" href="#">X3WebDev</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,7 +40,7 @@
               <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -48,8 +48,8 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section id="home" class="row-flex">
-      <div id="carouselExampleCaptions" class="carousel slide">
+    <header id="home" class="row-flex">
+      <nav id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -122,13 +122,13 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
-    </section>
+      </nav>
+    </header>
 
     <!-- ABOUT US -->
-    <section id="about" class="container-fluid pt-5">
-      <div class="row align-item-center p-5">
-        <div class="col-md-6 ps-2 ">
+    <section id="about" class="container-fluid pt-2">
+      <div class="row align-item-center p-5" >
+        <div class="col-lg-6 ps-2" data-aos="fade-right">
           <h1 class="fw-bold" >What is Web Development?</h1>
           <p>
             Web development is the work involved in developing a website for the
@@ -136,11 +136,12 @@
             simple single static page of plain text to complex web applications,
             electronic businesses, and social network services
           </p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus id placeat debitis incidunt earum doloremque dolorum corrupti saepe obcaecati blanditiis. Fugiat expedita necessitatibus corrupti neque quae quaerat consequatur inventore beatae!</p>
         </div>
-        <div class="col-md-6 p-2">
+        <div class="col-lg-6 p-2" >
           <img
-            class="img-fluid"
-            src="https://media.istockphoto.com/id/1469706272/photo/web-design-coding-and-asian-man-with-a-computer-for-programming-a-website-at-night-cyber.webp?b=1&s=170667a&w=0&k=20&c=7_2joeyiBtZQ_y-OhD-qxIh5cgeI5MXqgk87O7tjNZs="
+            class="img-fluid " data-aos="fade-left"
+            src="https://img.freepik.com/premium-photo/software-developer-analyzing-web-data-clipboard-papers-screens-comparing-information-files-young-man-using-programming-language-coding-new-user-interface-night_482257-56317.jpg"
             alt=""
           />
         </div>
@@ -148,16 +149,16 @@
     </section>
 
     <!-- MAIN -->
-    <main id="services" class="bg-primary text-white p-4">
+    <main id="services" class="bs-tertiary-bg text-white p-4 ">
       <div class="row" >
         <div class="col-md-4 p-2">
-          <div class="card" data-aos="flip-right" data-aos="flip-right">
+          <div class="card" data-aos="flip-right">
             <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" class="card-image-top  p-3" ></img>
             <div class="card-body">
               <div class="card-title fw-bold">HTML5</div>
               <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
               <hr>
-              <a href="#" class="btn btn-primary">Learn more...</a>
+              <a href="#" class="btn btn-secondary">Learn more...</a>
             </div>
           </div>
         </div>
@@ -168,7 +169,7 @@
               <div class="card-title fw-bold">CSS3</div>
               <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
               <hr>
-              <a href="#" class="btn btn-primary">Learn more...</a>
+              <a href="#" class="btn btn-secondary">Learn more...</a>
             </div>
           </div>
         </div>
@@ -179,7 +180,7 @@
               <div class="card-title fw-bold">Javascript</div>
               <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
               <hr>
-              <a href="#" class="btn btn-primary">Learn more...</a>
+              <a href="#" class="btn btn-secondary">Learn more...</a>
             </div>
           </div>
         </div>
@@ -190,7 +191,7 @@
               <div class="card-title fw-bold">React.js</div>
               <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
               <hr>
-              <a href="#" class="btn btn-primary">Learn more...</a>
+              <a href="#" class="btn btn-secondary">Learn more...</a>
             </div>
           </div>
         </div>
@@ -201,7 +202,7 @@
               <div class="card-title fw-bold">Git</div>
               <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
               <hr>
-              <a href="#" class="btn btn-primary">Learn more...</a>
+              <a href="#" class="btn btn-secondary">Learn more...</a>
             </div>
           </div>
         </div>
@@ -212,7 +213,7 @@
               <div class="card-title fw-bold">Node.js</div>
               <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
               <hr>
-              <a href="#" class="btn btn-primary">Learn more...</a>
+              <a href="#" class="btn btn-secondary">Learn more...</a>
             </div>
           </div>
         </div>
@@ -220,7 +221,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="text-center bg-secondary text-white fs-6 p-3 ">
+    <footer class="text-center bs-body-bg text-white fs-6 p-3 ">
       ©Allen Nosares | BASE404 Bootcamp - 2023
     </footer>
     <script
