@@ -10,11 +10,13 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
-    <header class="navbar navbar-expand-lg bg-body-tertiary">
-      <nav class="container">
-        <a class="navbar-brand" href="#">Activity 7</a>
+    <!-- NAVBAR -->
+    <header class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="container ">
+        <a class="navbar-brand fw-bold" href="#">X3School</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -27,25 +29,26 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto gap-2">
+          <ul class="navbar-nav ms-auto gap-2 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <section class="row">
+    <!-- HERO SECTION -->
+    <section id="home" class="row-flex">
       <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -122,11 +125,11 @@
       </div>
     </section>
 
-    <section class="container-fluid">
-      <h2 class="p-5 text-center fs-2 fw-bold">About Us</h2>
-      <div class="row align-item-center">
-        <div class="col-md-6 p-3">
-          <h1>What is Web Development?</h1>
+    <!-- ABOUT US -->
+    <section id="about" class="container-fluid pt-5">
+      <div class="row align-item-center p-5">
+        <div class="col-md-6 ps-2 ">
+          <h1 class="fw-bold" >What is Web Development?</h1>
           <p>
             Web development is the work involved in developing a website for the
             Internet or an intranet. Web development can range from developing a
@@ -134,7 +137,7 @@
             electronic businesses, and social network services
           </p>
         </div>
-        <div class="col-md-6 p-3">
+        <div class="col-md-6 p-2">
           <img
             class="img-fluid"
             src="https://media.istockphoto.com/id/1469706272/photo/web-design-coding-and-asian-man-with-a-computer-for-programming-a-website-at-night-cyber.webp?b=1&s=170667a&w=0&k=20&c=7_2joeyiBtZQ_y-OhD-qxIh5cgeI5MXqgk87O7tjNZs="
@@ -144,17 +147,90 @@
       </div>
     </section>
 
-    <main></main>
+    <!-- MAIN -->
+    <main id="services" class="bg-primary text-white p-4">
+      <div class="row" >
+        <div class="col-md-4 p-2">
+          <div class="card" data-aos="flip-right" data-aos="flip-right">
+            <img src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png" class="card-image-top  p-3" ></img>
+            <div class="card-body">
+              <div class="card-title fw-bold">HTML5</div>
+              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
+              <hr>
+              <a href="#" class="btn btn-primary">Learn more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div class="card" data-aos="flip-right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png" class="card-image-top  p-3" ></img>
+            <div class="card-body">
+              <div class="card-title fw-bold">CSS3</div>
+              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
+              <hr>
+              <a href="#" class="btn btn-primary">Learn more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div class="card" data-aos="flip-right">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png" class="card-image-top  p-3" ></img>
+            <div class="card-body">
+              <div class="card-title fw-bold">Javascript</div>
+              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
+              <hr>
+              <a href="#" class="btn btn-primary">Learn more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div class="card" data-aos="flip-right">
+            <img src="data:image/png;base64,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" class="card-image-top  p-3" ></img>
+            <div class="card-body">
+              <div class="card-title fw-bold">React.js</div>
+              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
+              <hr>
+              <a href="#" class="btn btn-primary">Learn more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div class="card" data-aos="flip-right">
+            <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="card-image-top  p-3" ></img>
+            <div class="card-body">
+              <div class="card-title fw-bold">Git</div>
+              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
+              <hr>
+              <a href="#" class="btn btn-primary">Learn more...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-2">
+          <div class="card" data-aos="flip-right">
+            <img src="data:image/jpeg;base64,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" class="card-image-top  p-3" ></img>
+            <div class="card-body">
+              <div class="card-title fw-bold">Node.js</div>
+              <div class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident minus facere illo voluptas inventore sapiente!.</div>
+              <hr>
+              <a href="#" class="btn btn-primary">Learn more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
-    <h2>Test Commit</h2>
     <!-- Footer -->
-    <footer class="text-center bg-secondary text-white">
-      ©Allen Nosares | BASE404
+    <footer class="text-center bg-secondary text-white fs-5 p-3 ">
+      ©Allen Nosares | BASE404 Bootcamp - 2023
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
